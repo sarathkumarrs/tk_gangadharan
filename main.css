@@ -310,20 +310,68 @@
     padding: 5rem 2rem 2.5rem 2rem;
     row-gap: 5rem;
 }
-.v-main{
+.v-main,.q-main{
     border: 4px solid #675656;
     margin: 3rem;   
 }
-.vedio-sec{
+.vedio-sec,.quote-sec{
     margin: auto;
     max-width: 1368px;
     position: relative;
 }
 .up-box{
-    height: 40px;
-    width: 367px;
+    /* height: 40px;
+    width: 367px; */
     background-color: #675656;
     position: absolute;
     top: -17px;
     left: 84px;
+}
+.video-h,.quote-h{
+    font-family: var(--secondary-font);
+    color: white;
+    text-align: center;
+    padding: .5rem 6rem;
+}
+.sanu-q{
+    font-family: var(--primary-font);
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+.sanu-n{
+    font-family: var(--primary-font);
+    font-size: 1.7rem;
+    font-weight: 500;
+    text-align: end;
+}
+.q-main{
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 4rem;
+}
+#footer-sec{
+    background-color: #2D2D2D;
+    text-align: center;
+    color: #E8E8E8;
+}
+.footer-name{
+    font-family: var(--secondary-font);
+    font-size: 27px;
+    font-weight: 400;
+}
+.footer-p{
+    font-size: var(--secondary-font);
+    font-size: 13px;
+    font-weight: 400;
+}
+.footer-cnt{
+    display: flex;
+    justify-content: center;
+    gap: 11px;
+    padding-bottom: 4rem;
+}
+.ft-div{
+    padding: 2rem 0rem 1.5rem 0rem;
 }
