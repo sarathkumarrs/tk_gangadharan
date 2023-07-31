@@ -370,8 +370,60 @@
     display: flex;
     justify-content: center;
     gap: 11px;
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
 }
 .ft-div{
-    padding: 2rem 0rem 1.5rem 0rem;
+    padding: 3rem 0rem .5rem 0rem;
+}
+
+
+@media screen and (max-width: 700px){
+    .ammavan-p{
+        width: 160px;
+        font-size: .55rem;
+    }
+    .ammavn-vpic{
+        height: 75px;
+    }
+    .v-main{
+        margin: 1rem;
+    }
+    .vedio-div{
+        row-gap: 0;
+        gap: 2rem;
+        padding: 2rem 0rem 2rem .6rem;
+    }
+    .ammavan-a{
+        /* justify-content: center; */
+        align-items: center;
+        gap: .8rem;
+    }
+    .up-box{
+        left: 34px;
+        top: -12px;
+    }
+    .video-h,.quote-h{
+        padding: .3rem 2rem;
+        font-size: 1rem;
+    }
+    .q-main{
+        margin: 1rem;
+    }
+    .sanu-pic{
+        height: 100px;
+    }
+    .sanu-q{
+        font-size: .6rem;
+    }
+    .sanu-n{
+        font-size: .7rem;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .vedio-div{
+        row-gap: 0;
+        gap: 2rem;
+        /* padding: 2rem 2rem 2rem 2rem; */
+    }
 }
