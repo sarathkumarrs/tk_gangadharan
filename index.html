@@ -43,7 +43,7 @@
                                 <li><a href="#">Books</a></li>
                                 <li><a href="#">Awards</a></li>
                                 <li><a href="#">Gallery</a></li>
-                                <li><a href="#">Life</a></li>
+                                <!-- <li><a href="#">Life</a></li> -->
                                 <li><a href="#">Contact</a></li>
                             </ul>
                         </nav>
@@ -63,7 +63,7 @@
     <section class="tk-web container">
         <div class="flex abt-1">
             <div class="author_image">
-                <img src="./media/tk.png" alt="">
+                <img class="tk-pic" src="./media/tk.png" alt="">
                 <div class="circle-y">
                     <img src="./media/Ellipse 3.png" alt="">
                     <img src="./media/Ellipse 2.png" alt="">
@@ -73,10 +73,10 @@
                 <div>
                     <h1 class="off-n">Official Website Of <span class="author_name">TK Gangadharan</span></h1>
                 </div>
-                <div>
+                <div class="off-p-div">
                     <p class="off-p">TK Gangadharan is a renowned Malayalam poet noted for the uniqueness and contemporaneity of his poetry. He was born in Kodungaloor as the son of Kannapan and Devaki. He started writing poetry during his childhood.</p>
                 </div>
-                <div>
+                <div class="rd-div">
                     <button class="rd-m">READ MORE</button>
                 </div>
             </div>
@@ -94,7 +94,7 @@
             <div class="m-novels">
                 <div class="flex nvl-name">
                     <img src="./media/chevron.png" alt="">
-                    <p>O Chandhu Menon Novel Award</p>
+                    <p>O . Chandhu Menon Novel Award</p>
                 </div>
                 <div class="flex nvl-name">
                     <img src="./media/chevron.png" alt="">
@@ -184,7 +184,7 @@
         </div>
         <div class="v-main">
             <div class=" vedio-div"> 
-                <div>
+                <div class="video-sub-div">
                     <a class="ammavan-a flex" href="https://www.youtube.com/watch?v=lIn63AuEzso" target="_blank">
                         <div>
                             <img class="ammavn-vpic" src="./media/wait ammavan.png" alt="">               
@@ -194,7 +194,7 @@
                         </div>
                     </a>
                 </div>
-                <div>
+                <div class="video-sub-div">
                     <a class="ammavan-a flex" href="https://www.youtube.com/watch?v=GsmfcBvKPHE" target="_blank">
                         <div>
                             <img class="ammavn-vpic" src="./media/birth.png" alt="">               
@@ -204,7 +204,7 @@
                         </div>
                     </a>
                 </div>
-                <div>
+                <div class="video-sub-div">
                     <a class="ammavan-a flex" href="https://www.youtube.com/watch?v=hDJ3pl6Wa9Y" target="_blank">
                         <div>
                             <img class="ammavn-vpic" src="./media/writer-v.png" alt="">               
@@ -214,7 +214,7 @@
                         </div>
                     </a>
                 </div>
-                <div>
+                <div class="video-sub-div">
                     <a class="ammavan-a flex" href="https://www.youtube.com/watch?v=lfwX6KgeHwY" target="_blank">
                         <div>
                             <img class="ammavn-vpic" src="./media/military.png" alt="">               
@@ -300,10 +300,16 @@
               items:1
           },
           600:{
-              items:3
+              items:1
           },
           1000:{
               items:5
+          },
+          900:{
+              items:3
+          },
+          800:{
+              items:2
           }
       }
     });

@@ -328,7 +328,6 @@
 }
 .ammavan-a{
     text-decoration: none;
-    width: 580px;
     gap: 1rem;
 }
 .ammavn-vpic{
@@ -407,16 +406,21 @@
     padding: 3rem 0rem .5rem 0rem;
 }
 .bar{
-    height: 1.7rem;
+    height: 1.3rem;
 }
 .bar-div{
-    margin: 1.2rem;
+    margin: 1rem;
     text-align: end;
     display: none;
 }
+.owl-item{
+    display: flex;
+    justify-content: center;
+}
 
 
-@media screen and (max-width: 700px){
+
+@media screen and (max-width: 800px){
     .ammavan-p{
         width: 160px;
         font-size: .55rem;
@@ -443,7 +447,7 @@
     }
     .video-h,.quote-h{
         padding: .3rem 2rem;
-        font-size: 1rem;
+        font-size: .8rem;
     }
     .q-main{
         margin: 1rem;
@@ -463,6 +467,35 @@
     .bar-div{
         display: block;
     }
+    .q-main,.v-main{
+        border: 2px solid #675656;
+    }
+    .owl-next{
+        right: 0;
+    }
+    .owl-prev{
+        left: 0;
+    }
+    .spotlight_left{
+        display: none;
+    }
+    .bottom_img img{
+        width: fit-content;
+    }
+    .top-q{
+        left: 0;
+    }
+    .mom{
+        font-size:1.5rem;
+    }
+    .top-p{
+        font-size: 1rem;
+    }
+    .author_image::before{
+        height: 315px;
+        left: 38px;
+        width: 240px;
+    }
 }
 
 
@@ -473,12 +506,80 @@
         gap: 2rem;
         /* padding: 2rem 2rem 2rem 2rem; */
     }
-    .owl-next{
+    /* .owl-next{
         right: -1.5rem;
+    } */
+    .video-sub-div{
+        width: 0;
+    }
+    .q-main{
+        padding: 2rem  .5rem 2rem .5rem;
+    }
+    .footer-name{
+        font-size: 20px;
+    }
+    .footer-p{
+        font-size: 10px;
+    }
+    .ft-div{
+        padding: 2rem 0rem .5rem 0rem;
+    }
+    .footer-cnt{
+        padding-bottom: 1.5rem;
+    }
+    .year-p{
+        width: 300px;
     }
 }
 @media screen and (max-width:750px) {
     .abt-1{
         display: block;
+    }
+    .off-n{
+        text-align: center;
+        font-size: 22px;
+        padding: .5rem;
+    }
+    .author_name::before{
+        width: 158px;
+    }
+    .off-p{
+        display: flex;
+        justify-content: center;
+        max-width: none;
+        padding: 2rem .5rem;
+        font-size: 15px;
+
+    }
+    .rd-div,.off-p-div,.abt-1{
+        text-align: center;
+    }
+    .tk-pic{
+        width: 250px;
+    }
+    
+
+}
+
+@media screen and (max-width: 650px){
+    #backgroundimage {
+        background-image:none;
+        justify-content: center;
+        margin: 4rem 0rem 4rem 0rem;
+        min-height: 0;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    .year-p{
+        width: 250px;
+    }
+    .m-novels{
+        gap: 2px;
+    }
+    .year-47{
+        margin: 0;
+        padding: 1rem;
     }
 }
