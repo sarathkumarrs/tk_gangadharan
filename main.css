@@ -236,7 +236,7 @@
     color: white;
     font-family: var(--primary-font);
     font-weight: 400;
-    margin: 5rem 1.5rem 5rem 2rem;
+    margin: 3rem 1.5rem 5rem 2rem;
     padding: 2rem;
 }
 .nvl-name{
@@ -409,7 +409,7 @@
     height: 1.3rem;
 }
 .bar-div{
-    margin: 1rem;
+    padding: 1rem;
     text-align: end;
     display: none;
 }
@@ -417,6 +417,150 @@
     display: flex;
     justify-content: center;
 }
+
+
+/* biography */
+
+.sp-p{
+    font-family: 'Anek Malayalam', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: white;
+    line-height: 1.29;
+    width: 336px;
+}
+.sp-div {
+    position: absolute;
+    top: 40%;
+    left: -24.5rem;
+    z-index: 99;
+}
+.sp-p-tk{
+    color: #FFD600;
+}
+.sp-n{
+    font-family: var(--primary-font);
+    color: white;
+    text-align: end;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.novel-list{
+    list-style-position: inside;
+}
+.novel-list li,.bio-p,.honor-list{
+    font-family: var(--primary-font);
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+.nov-heads1,.nov-heads2,.nov-heads3{
+    font-family: var(--primary-font);
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 1rem;
+    position: relative;
+}
+.nov-div{
+    justify-content: center;
+}
+.bio-p-div{
+    justify-content: center;
+}
+.bio-p{
+    width: 950px;
+    margin: 4rem;
+}
+.honor-sec{
+    justify-content: center;
+    margin-top: 5rem; 
+    margin-bottom:5rem;
+}
+.honor-n{
+    font-family: var(--primary-font);
+    font-size: 2.1rem;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 1.5rem;
+    color: white;
+}
+.honor-div{
+    background-color:var(--primary-color);
+    border-radius: 30px;
+    padding: 4rem;
+}
+.honor-list{
+    color: white;
+    line-height: 2;
+}
+.nov-heads1::before{
+    content: "";
+    position: absolute;
+    z-index: -2;
+    bottom: 0;
+    height: 20px;
+    width: 199px;
+    background-color: #FFD600;
+}
+.nov-heads2::before{
+    content: "";
+    position: absolute;
+    z-index: -2;
+    bottom: 0;
+    height: 20px;
+    width: 302px;
+    background-color: #FFD600;
+}
+.nov-heads3::before{
+    content: "";
+    position: absolute;
+    z-index: -2;
+    bottom: 0;
+    height: 20px;
+    width: 329px;
+    background-color: #FFD600;
+}
+
+
+
+
+/* books section  */
+
+.lib-pic img{
+    object-fit: cover;
+}
+.detail-div{
+    width: 250px;
+    padding: .5rem;
+}
+.details-h{
+    font-size: 1.4rem;
+    font-family: var(--primary-font);
+    font-weight: 400;
+    color: white;
+    /* padding: .5rem; */
+}
+.books-detail{
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    background-color:var(--primary-color);
+}
+.books-pg-sec{
+    padding: 2rem;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    display: grid;
+    place-items: center;
+    gap: 2.5rem;
+}
+.books-h{
+    font-family: var(--primary-font);
+    font-weight: 600;
+    font-size: 2rem;
+}
+.books-h-div{
+    display: none   ;
+}
+
 
 
 
@@ -466,6 +610,7 @@
     }
     .bar-div{
         display: block;
+        background-color:#bbb7b7;
     }
     .q-main,.v-main{
         border: 2px solid #675656;
@@ -483,19 +628,33 @@
         width: fit-content;
     }
     .top-q{
-        left: 0;
+        left: 1rem;
+        top: 50%;
     }
     .mom{
-        font-size:1.5rem;
+        font-size:1.8rem;
+        font-weight: 500;
     }
     .top-p{
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
-    .author_image::before{
-        height: 315px;
-        left: 38px;
-        width: 240px;
+    .nov-div{
+        display: grid  ;
+
     }
+    .nov-heads1::before{
+        width: 150px;
+    }
+    .nov-heads2::before{
+        width: 230px;
+    }
+    .nov-heads3::before{
+        width: 249px;
+    }
+    .books-h-div{
+        display: block;
+    }
+
 }
 
 
@@ -530,6 +689,28 @@
     .year-p{
         width: 300px;
     }
+    .bio-p{
+        font-size: 1rem;
+    }
+    .honor-div{
+        margin: .8rem;
+        padding: 1.5rem;
+        border-radius: 10px;
+    }
+    .honor-n{
+        font-size: 1.5rem;
+    }
+    .honor-list li{
+        font-size: 1rem;
+        margin-left: 10px;
+    }
+    .novel-list li{
+        font-size: 1rem;
+    }
+    .nov-heads1, .nov-heads2, .nov-heads3{
+        font-size: 1.5rem;
+    }
+
 }
 @media screen and (max-width:750px) {
     .abt-1{
@@ -541,7 +722,7 @@
         padding: .5rem;
     }
     .author_name::before{
-        width: 158px;
+        width: 155px;
     }
     .off-p{
         display: flex;
@@ -555,9 +736,26 @@
         text-align: center;
     }
     .tk-pic{
-        width: 250px;
+        width: 200px;
     }
-    
+    .circle-y{
+        right: 31%;
+        top: -4px;
+    }
+    .author_image::before{
+        height: 258px;
+        width: 189px;
+        top: -23px;
+        left: -25px;
+    }
+    .author_image{
+        max-width: fit-content;
+        margin: 0rem auto;
+    }
+    .details-h{
+        font-size: 1rem;
+    }
+
 
 }
 
@@ -568,6 +766,10 @@
         margin: 4rem 0rem 4rem 0rem;
         min-height: 0;
     }
+    .year-47{
+        border-radius: .65rem;
+    }
+
 }
 
 @media screen and (max-width: 600px){
@@ -581,5 +783,12 @@
     .year-47{
         margin: 0;
         padding: 1rem;
+    }
+    .owl-stage-outer{
+        height: 24rem;
+    }
+    .books-head{
+        padding: 1rem;
+        font-size: 1.8rem;
     }
 }
