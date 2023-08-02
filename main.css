@@ -748,7 +748,7 @@
 .right-div{
     background-color:#183A4A;
     height: 500px;
-    width: 400px;
+    width: 300px;
     display: flex;
     align-items: center;
     border-radius: 0px 50px 50px 0px;
@@ -759,6 +759,9 @@
     align-items: center;
     right: 285px;
     top: 200px;
+}
+.map-i{
+    border-radius: 50%;
 }
 
 
