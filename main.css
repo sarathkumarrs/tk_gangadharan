@@ -581,6 +581,7 @@
     width: 0;
     overflow: hidden;
     z-index: 100;
+    overflow-y: scroll;
     background-color: #e5e1de;
     transition:  .3s ease;
     box-shadow: 4.7px 0.4px 1.9px rgba(0, 0, 0, 0.031),
