@@ -415,6 +415,7 @@
     position: absolute;
     top: -17px;
     left: 84px;
+    z-index: 999;
 }
 
 .video-h,
@@ -1351,14 +1352,24 @@
         font-size: 1.8rem;
     }
 }
-<<<<<<< HEAD
-=======
+
+.q-c {
+    align-items: center;
+}
+
+.owl-carousel.carousel-2 {
+    width: initial;
+}
+
+.owl-carousel.carousel-2 .owl-stage-outer {
+    height: fit-content;
+}
 
 .hi-slide {
     position: relative;
-    width: 754px;
-    height: 292px;
-    margin: 115px auto 0;
+    width: fit-content;
+    margin: 0rem auto;
+    margin-bottom: 6rem;
     display: none;
 }
 
@@ -1390,17 +1401,17 @@
     left: -60px;
 }
 
-/* .hi-slide .hi-prev::before {
+.hi-slide .hi-prev::before {
     content: '<';
-} */
+}
 
 .hi-slide .hi-next {
     right: -60px;
 }
 
-/* .hi-slide .hi-next::before {
+.hi-slide .hi-next::before {
     content: '>';
-} */
+}
 
 .hi-slide>ul {
     list-style: none;
@@ -1431,6 +1442,5 @@
     width: 100%;
     height: 100%;
     background-position: center;
-    object-fit: initial;
+    object-fit: cover;
 }
->>>>>>> refs/remotes/origin/main
