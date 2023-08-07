@@ -122,3 +122,23 @@ $(document).ready(function () {
     }
 })(jQuery);
 $('.slide').hiSlide();
+
+function showContent(contentType) {
+    const contentSections = document.querySelectorAll('main div');
+    contentSections.forEach(section => {
+        if (section.id === `${contentType}Content`) {
+            section.classList.remove('hidden-1');
+        } else {
+            section.classList.add('hidden-1');
+        }
+    });
+
+    const headings = document.querySelectorAll('h1');
+    headings.forEach(heading => {
+      if (heading.id === `${contentType}Heading`) {
+        heading.classList.add('big-heading');
+      } else {
+        heading.classList.remove('big-heading');
+      }
+    });
+}
