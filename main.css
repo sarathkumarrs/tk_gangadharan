@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@100;200;300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 
 :root {
@@ -983,6 +983,7 @@
     display: grid;
     row-gap: 1rem;
     place-items: center;
+    gap: 3rem;
   }
   .my-l{
     font-family: var(--primary-font);
@@ -1175,7 +1176,7 @@
         top: 400px;
     }
     .opt-3 {
-        cursor: none;
+        cursor: auto;
     }
 }
 
@@ -1260,8 +1261,8 @@
     .opt-3{
         font-size: .6rem;
     }
-    .big-heading {
-        font-size: 1rem;
+    .opt-3 h1 {
+        margin: .5rem 0rem;
     }
 }
 
@@ -1375,7 +1376,7 @@
     width: fit-content;
     margin: 0rem auto;
     margin-bottom: 6rem;
-    display: none;
+    /* display: none; */
 }
 
 .hi-slide .hi-next,
@@ -1384,7 +1385,7 @@
     top: 50%;
     width: 40px;
     height: 40px;
-    margin-top: -20px;
+    /* margin-top: -20px; */
     border-radius: 50px;
     line-height: 40px;
     text-align: center;
@@ -1406,17 +1407,17 @@
     left: -60px;
 }
 
-.hi-slide .hi-prev::before {
+/* .hi-slide .hi-prev::before {
     content: '<';
-}
+} */
 
 .hi-slide .hi-next {
     right: -60px;
 }
 
-.hi-slide .hi-next::before {
+/* .hi-slide .hi-next::before {
     content: '>';
-}
+} */
 
 .hi-slide>ul {
     list-style: none;
@@ -1448,4 +1449,12 @@
     height: 100%;
     background-position: center;
     object-fit: cover;
+}
+.gallery-div{
+    color: #000;
+    font-family:var(--primary-font);
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    margin: 2rem;
 }
