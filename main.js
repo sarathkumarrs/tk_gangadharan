@@ -14,7 +14,7 @@ hiddenBox.addEventListener('click',(event)=>{
 document.addEventListener('click',()=>{
     if(hiddenBox.classList.contains('hidden')){
         hiddenBox.classList.remove('hidden')
-    }
+    }$
 })
 
 $(document).ready(function () {
@@ -142,3 +142,44 @@ function showContent(contentType) {
       }
     });
 }
+
+// // Function to display the popup and set its content
+// function showPopup(content) {
+//     var popup = document.getElementById('popup');
+//     var popupContent = document.getElementById('popup-content');
+    
+//     popupContent.innerHTML = content;
+//     popup.style.display = 'block';
+//   }
+  
+//   // Function to hide the popup
+//   function closePopup() {
+//     var popup = document.getElementById('popup');
+//     popup.style.display = 'none';
+//   }
+  
+
+document.addEventListener('DOMContentLoaded', function() {
+    const contentDivs = document.querySelectorAll('.books-detail');
+    const modals = document.querySelectorAll('.modal');
+    const closeButtons = document.querySelectorAll('.close-button');
+
+    contentDivs.forEach(content => {
+        content.addEventListener('click', () => {
+            const modal = document.querySelector(content.getAttribute('data-modal-target'));
+            modal.style.display = 'block';
+        });
+    });
+
+    closeButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const modal = button.closest('.modal');
+            modal.style.display = 'none';
+        });
+    });
+});
+    // function closePopup() {
+    // var popup = document.getElementById('popup');
+    // popup.style.display = 'none';
+    // }
+

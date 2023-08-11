@@ -110,11 +110,29 @@
         <!-- <div class="books-h-div">
             <h1 class="books-h">BOOKS</h1>
         </div> -->
-        <div class="books-detail">
+        <div class="books-detail"  data-modal-target="#modal1" >
             <img src="../media/book1.jpg" alt="">
             <div class="detail-div">
                 <h1 class="details-h">Published By: DC BOOKS</h1>
                 <h1 class="details-h">Releasing Year: 2016</h1>
+            </div>
+        </div>
+        <div class="modal" id="modal1">
+            <div class="modal-content">
+                <!-- <span class="close-button" data-modal-close>x</span> -->
+                <div class="flex pop-sec">
+                    <div class="book-img">
+                        <img src="../media/book1.jpg" alt="Book Image">
+                    </div>
+                    <div class="pop-cont">
+                        <p class="pop-title">കോർട്ട്മാർഷൽ കാത്ത് ഒരു പ്രണയം |Court Martial Kaathu Oru Pranayam (Malayalam Edition)</p>
+                        <p class="pop-n">ടി.കെ ഗംഗാധരൻ</p>
+                        <h1 class="pop-details-h">Published By: DC BOOKS</h1>
+                        <h1 class="pop-details-h1">Releasing Year: 2016</h1>
+                        <a class="amz-link" href="#">BUY ON AMAZON</a> <br><br>
+                        <span onclick="closePopup()" class="close-button close-link">Close</span>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="books-detail">
@@ -166,6 +184,24 @@
                 <h1 class="details-h">Releasing Year: 2016</h1>
             </div>
         </div>
+
+        <!-- <div class="books-detail" onclick="showPopup('Published By: DC BOOKS<br>Releasing Year: 2016', '../media/book2.jpg')">
+            <img src="../media/book2.jpg" alt="">
+            <div class="detail-div">
+              <h1 class="details-h">Book 1</h1>
+            </div>
+          </div> -->
+
+        <!-- <div id="popup" class="popup">
+            <div>
+                <h1></h1>
+            </div>
+            <span onclick="closePopup()" class="close-button">Close</span>
+            <div id="popup-content"></div>
+        </div> -->
+
+
+
     </section>
 
     <!-- books section end here  -->
@@ -186,8 +222,12 @@
             </div>
         </div>
     </footer>
+    
 
     <!-- footer section ends here  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
     <script src="../main.js"></script>
 </body>
