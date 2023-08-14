@@ -1164,6 +1164,7 @@
 .modal-content img{
     display: flex;
     justify-content: center;
+    border-radius: 1rem;
 }
 .amz-link{
     text-decoration: none;
@@ -1178,7 +1179,13 @@
     background-color: var(--primary-color);
     font-family: var(--primary-font);
     color: #fff;
+    display: block;
     border-radius: 6px;
+}
+.hello {
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
 }
 .pop-sec{
     align-items: center;
@@ -1195,6 +1202,7 @@
 }
 .book-img{
     border: 1px solid var(--primary-color);
+    border-radius: 1rem;
 }
 
 
@@ -1203,7 +1211,9 @@
         width: 160px;
         font-size: .55rem;
     }
-
+    .gallery-sec{
+        display: none;
+    }
     .ammavn-vpic {
         height: 75px;
     }
@@ -1466,7 +1476,7 @@
     }
     .pop-title{
         font-size:.9rem ;
-        margin-top: .2rem;
+        margin-top: .6rem;
     }
     .pop-n{
         font-size: .9rem;
@@ -1477,6 +1487,7 @@
     }
     .modal-content{
         background: linear-gradient(to bottom, #2D2D2D 35%, white 30%);
+        border-radius: 1rem;
     }
 }
 

@@ -102,6 +102,26 @@ $(document).ready(function () {
             $lis.each(function (index, element) {
                 var state = states[index];
                 $(element).css('zIndex', state.$zIndex).finish().animate(state, setting.speed).find('img').css('opacity', state.$opacity);
+            });  
+
+            document.addEventListener('DOMContentLoaded', function() {
+                const contentDivs = document.querySelectorAll('.books-detail');
+                const modals = document.querySelectorAll('.modal');
+                const closeButtons = document.querySelectorAll('.close-button');
+            
+                contentDivs.forEach(content => {
+                    content.addEventListener('click', () => {
+                        const modal = document.querySelector(content.getAttribute('data-modal-target'));
+                        modal.style.display = 'block';
+                    });
+                });
+            
+                closeButtons.forEach(button => {
+                    button.addEventListener('click', () => {
+                        const modal = button.closest('.modal');
+                        modal.style.display = 'none';
+                    });
+                });
             });
         }
 
