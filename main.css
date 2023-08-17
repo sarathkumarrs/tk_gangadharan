@@ -297,7 +297,7 @@
 }
 
 .n-s {
-  gap: 5rem;
+  gap: 2rem;
   margin-left: 1rem;
   margin: 3rem 0rem 0rem 1.5rem;
 }
@@ -500,11 +500,6 @@
   left: -24.5rem;
   z-index: 99;
 }
-
-.sp-p-tk {
-  color: #ffd600;
-}
-
 .sp-n {
   font-family: var(--primary-font);
   color: white;
@@ -774,7 +769,9 @@
 .cnt-div {
   justify-content: center;
 }
-
+.cnt-spotlight_text{
+  align-items: center;
+}
 .left-div {
   border: 1.5px solid #183a4a;
   padding: 4.5rem 9rem 2rem 5rem;
@@ -795,9 +792,7 @@
   color: #183a4a;
 }
 
-.cnt-p {
-  font-family: "Montserrat", sans-serif;
-}
+
 
 .cnt-p-add {
   font-family: var(--primary-font);
@@ -819,11 +814,6 @@
   gap: 0.6rem;
 }
 
-.cnt-p {
-  width: 500px;
-  text-align: center;
-  margin-top: 3rem;
-}
 
 .cnt-sub-p a {
   text-decoration: none;
@@ -832,13 +822,12 @@
 
 .cnt-sec {
   justify-content: center;
-  margin: 5rem 0rem 5rem 0rem;
+  margin:11rem 0rem 11rem 0rem;
 }
 
 .right-div {
   background-color: #183a4a;
-  height: 500px;
-  width: 300px;
+  width: 200px;
   display: flex;
   align-items: center;
   border-radius: 0px 50px 50px 0px;
@@ -1140,7 +1129,9 @@ header:hover {
   .gallery-sec {
     display: none;
   }
-
+  .cnt-bar{
+    margin-top: 6rem;
+  }
   .ammavn-vpic {
     height: 75px;
   }
@@ -1267,11 +1258,6 @@ header:hover {
     width: 200px;
   }
 
-  .cnt-p {
-    width: 250px;
-    margin-top: 2rem;
-    font-size: 0.8rem;
-  }
 
   .cnt-p-add {
     font-size: 1rem;
@@ -1293,7 +1279,7 @@ header:hover {
   }
 
   .cnt-sec {
-    margin: 5rem 1rem 5rem 1rem;
+    margin: 5rem 1rem 6rem 1rem;
   }
 
   .map-i {
@@ -1301,7 +1287,8 @@ header:hover {
     width: 150px;
     height: 150px;
     position: absolute;
-    top: 400px;
+    top: 280px;
+    right: 50px
   }
 
   .opt-3 {
@@ -1514,5 +1501,17 @@ header:hover {
   .books-head {
     padding: 1rem;
     font-size: 1.8rem;
+  }
+  .n-s{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 3rem 0rem 0rem 0rem;
+  }
+  .year-n{
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  .year-p{
+    font-size: 1rem;
   }
 }
