@@ -508,7 +508,7 @@
 }
 
 .novel-list {
-  list-style-position: inside;
+  margin-left: 1rem;
 }
 
 .novel-list li,
@@ -1365,7 +1365,8 @@ header:hover {
 
   .nov-heads1,
   .nov-heads2,
-  .nov-heads3 {
+  .nov-heads3,
+  .nov-heads4 {
     font-size: 1.5rem;
   }
 
